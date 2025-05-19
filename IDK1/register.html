@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Daniels Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+<h1 id="title">Daniels Survey Form</h1>
+<p id="description">Please take a moment to fill out this short survey to help us improve in our services.</p>
+<form id="survey-form" action="https://formsubmit.co/tenioladaniel282@gmail.com" method="POST">
+    <fieldset>
+       <label id="name-label" for="name">Your Name <input id="name" name="name" type="text" placeholder="Uzumaki Naruto" required/></label>
+       <label id="email-label" for="email">Your Email <input id="email" name="email" type="email" placeholder="danielman67@gmail.com" required></label>
+       <label id="number-label" for="number">Your Age <input id="number" name="age" max="90" min="12" type="number" placeholder="19" required></label>
+       <label for="dropdown">What option best describes your current role: <select id="dropdown" required>
+        <option value="">Select current role</option>
+        <option value="1">Student</option>
+        <option value="2">Full time Job</option>
+        <option value="3">loafer</option>
+           <option value="4">Adventurer</option>
+           <option value="5">Prefer not to say</option>
+           <option value="6">Other</option>
+       </select></label>
+        <p><strong><i>Would you recommend this survey to a friend</i></strong></p>
+       <label for="item1"><input id="item1" name="Refer-someone" type="radio" value="Definitely" class="inline">Definitely</label>
+       <label for="item2"><input id="item2" name="Refer-someone" type="radio" value="Maybe" class="inline">Maybe</label>
+       <label for="item3"><input id="item3" name="Refer-someone" type="radio" value="Never" class="inline">Never</label>
+        <p><strong><i>What are your favourite programming languages<br><small>(Check all that apply)</small></i></strong></p>
+        <label for="num1"><input id="num1" value="HTML" type="checkbox" class="outline"  name="language[]" required>HTML(HyperText Markup Language)</label>
+        <label for="num2"><input id="num2" value="CSS" type="checkbox" class="outline" name="language[]">CSS(Cascading Style Sheets)</label>
+        <label for="num3"><input id="num3" value="JAVA" type="checkbox" class="outline" name="language[]">Java</label>
+        <label for="num4"><input id="num4" value="Python" type="checkbox" class="outline" name="language[]">Python</label>
+        <label for="num5"><input id="num5" value="C++" type="checkbox" class="outline" name="language[]">C++</label>
+        <label for="num6"><input id="num6" value="JavaScript" type="checkbox" class="outline" name="language[]">JavaScript</label>
+        <label for="num7"><input id="num7" value="SQL" type="checkbox" class="outline" name="language[]">SQL(Standard Query Language)</label>
+        <label for="num8"><input id="num8" value="PHP" type="checkbox" class="outline" name="language[]">PHP(Hypertext Preprocessor)</label>
+
+        <p><strong><i>What field most peaks your interests<br><small>(Check all that apply)</small></i></strong></p>
+        <label for="checkbox1"><input id="checkbox1" value="Software Developer" type="checkbox" name="Field[]" class="line" >Software Developer</label>
+        <label for="checkbox2"><input id="checkbox2" value="Data Scientist" type="checkbox" name="Field[]" class="line">Data Scientist</label>
+        <label for="checkbox3"><input id="checkbox3" value="IT Analyst" type="checkbox" name="Field[]" class="line">IT Analyst</label>
+        <label for="checkbox4"><input id="checkbox4" value="CyberSecurity specialist" type="checkbox" name="Field[]" class="line">CyberSecurity Specialists</label>
+        <label for="checkbox5"><input id="checkbox5" value="AI engineer" type="checkbox" name="Field[]" class="line">AI Engineers</label>
+        <label for="checkbox6"><input id="checkbox6" value="Product Designer" type="checkbox" name="Field[]" class="line">Product Designer</label>
+        <label for="referrer">How did you hear about us?<select id="referrer" name="referrer" required>
+            <option value="">(select one)</option>
+            <option value="Learning Institution">Learning Institution</option>
+            <option value="Dylan">Dylan News</option>
+            <option value="Social Media">Social Media</option>
+            <option value="Friends & Family">Friends and Family</option>
+            <option value="Other">Other</option>
+        </select></label>
+        <label for="bio">Any Suggestions on how IT should be improved:<textarea id="bio" name="bio" rows="4" cols="38" placeholder="Technology can be improved by building..."></textarea></label>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit"/>
+</form>
+</body>
+</html>
